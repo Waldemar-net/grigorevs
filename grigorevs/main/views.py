@@ -4,11 +4,9 @@ from django.shortcuts import render
 # Create your views here.
 def index(request):
     context = {
-        'title':'Home',
-        'content': 'Главная страница магазина - grigorevs',
-        'list' : ['first', 'second'],
-        'dict' : {'first':1},
-        'is_authenticated': False
+        'title':'Grigorevs - Главная страница магазина',
+        'content':'Интернет магазин одежды'
+        
     }
     return render(request, 'main/index.html', context)
 
